@@ -8,6 +8,7 @@ Welcome to the personal knowledge base repository. This wiki contains organized 
 docs/
 ├── scripts/          # Shell scripts and code snippets
 ├── prompts/          # AI prompts and templates
+├── tampermonkey/     # Tampermonkey browser userscripts
 └── tools/            # Utility tools and configurations
 ```
 
@@ -22,10 +23,14 @@ docs/
 ### [Tools](docs/tools/)
 - *Coming soon* - Utility tools and configurations
 
+### [Tampermonkey](docs/tampermonkey/)
+- *Coming soon* - Browser userscripts for automation and customization
+
 ## 🚀 Quick Navigation
 
 - **Scripts**: Find automation scripts and command-line utilities
 - **Prompts**: Discover AI prompts for enhanced productivity
+- **Tampermonkey**: Browser userscripts for automation and customization
 - **Tools**: Access configuration files and utility tools
 - **[Complete Site Map](SITEMAP.md)**: Full navigation guide
 
