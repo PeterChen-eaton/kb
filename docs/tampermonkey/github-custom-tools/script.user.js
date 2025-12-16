@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         GitHub Custom Tools
-// @namespace    http://tampermonkey.net/
+// @namespace    https://github.com/PeterChen-eaton/kb/blob/main/docs/tampermonkey/github-custom-tools
 // @version      2025-12-16
 // @description  GitHub Custom Tools
 // @author       Peter
