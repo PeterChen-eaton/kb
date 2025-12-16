@@ -19,6 +19,23 @@
 
     // auto follow sso
     setInterval(() => {
+        const sections = document.querySelectorAll('section');
+        const ssoBanner = Array.from(sections).find(s => {
+            return Array.from(s.classList).find(c => {
+                return c.startsWith('GlobalSSOBanner');
+            });
+        });
+        if (ssoBanner) {
+            Array.from(ssoBanner.querySelectorAll('a')).forEach(a => {
+                if (a.href.includes('sso')) {
+                    a.click();
+                }
+            });
+        }
+    }, 1000);
+
+    // auto follow sso continue
+    setInterval(() => {
         const sso = document.querySelector('.org-sso button.btn');
         if (sso) {
             sso.click();
