@@ -16,10 +16,10 @@
     if (sidebar) {
         sidebar.style.minWidth = "350px";
     }
-    
+
     // auto follow sso
     setInterval(() => {
-        const sso = document.querySelector('.org-sso button.btn')    
+        const sso = document.querySelector('.org-sso button.btn');
         if (sso) {
             sso.click();
         }
@@ -32,7 +32,7 @@
         // sort all repos
         const ul = document.querySelector('.js-dashboard-repos-list');
         const items = Array.from(ul.querySelectorAll('li'));
-        
+
         items.sort((a, b) => {
             var aHref = a.querySelector('a').href;
             var bHref = b.querySelector('a').href;
