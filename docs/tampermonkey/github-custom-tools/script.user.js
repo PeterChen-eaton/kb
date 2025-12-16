@@ -17,26 +17,29 @@
     if (sidebar) {
         sidebar.style.minWidth = "350px";
     }
-
+    
     // auto follow sso
-    const sso = document.querySelector('.org-sso button')
-    if (sso) {
-        sso.click();
-    }
+    setInterval(() => {
+        const sso = document.querySelector('.org-sso button.btn')    
+        if (sso) {
+            sso.click();
+        }
+    }, 1000);
 
-    // show more repos
-    document.querySelector('.js-more-repos-form button').click();
-
-    // sort all repos
     setTimeout(() => {
+        // show more repos
+        document.querySelector('.js-more-repos-form button').click();
+
+        // sort all repos
         const ul = document.querySelector('.js-dashboard-repos-list');
         const items = Array.from(ul.querySelectorAll('li'));
-
+        
         items.sort((a, b) => {
-            return a.classList.contains('private') ? (a.classList.contains("no-description") ? -1 : 1) : -1;
+            var aHref = a.querySelector('a').href;
+            var bHref = b.querySelector('a').href;
+            return bHref.localeCompare(aHref);
         });
 
-        ul.innerHTML = '';
         items.forEach(li => ul.appendChild(li));
     }, 500);
 })();
