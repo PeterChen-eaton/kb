@@ -57,5 +57,5 @@
         });
 
         items.forEach(li => ul.appendChild(li));
-    }, 500);
+    }, 1500);
 })();
