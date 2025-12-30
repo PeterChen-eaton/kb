@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         GitHub Custom Tools
 // @namespace    https://github.com/PeterChen-eaton/kb/blob/main/docs/tampermonkey/github-custom-tools
-// @version      2025-12-16
+// @version      2025-12-30
 // @description  GitHub Custom Tools
 // @author       Peter
 // @match        https://github.com/*
@@ -14,7 +14,7 @@
 
     const sidebar = document.querySelector('.feed-left-sidebar');
     if (sidebar) {
-        sidebar.style.minWidth = "350px";
+        sidebar.style.minWidth = "374px";
     }
 
     // auto follow sso
