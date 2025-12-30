@@ -42,9 +42,12 @@
         }
     }, 1000);
 
-    setTimeout(() => {
+    setInterval(() => {
         // show more repos
-        document.querySelector('.js-more-repos-form button').click();
+        var btn = document.querySelector('.js-more-repos-form button');
+        if (btn) {
+            btn.click();  
+        }
 
         // sort all repos
         const ul = document.querySelector('.js-dashboard-repos-list');
@@ -57,5 +60,5 @@
         });
 
         items.forEach(li => ul.appendChild(li));
-    }, 1500);
+    }, 500);
 })();
