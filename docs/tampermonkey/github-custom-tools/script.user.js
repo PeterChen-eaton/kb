@@ -46,7 +46,7 @@
         // show more repos
         var btn = document.querySelector('.js-more-repos-form button');
         if (btn) {
-            btn.click();  
+            btn.click();
         }
 
         // sort all repos
