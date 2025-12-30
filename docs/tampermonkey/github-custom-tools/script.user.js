@@ -14,7 +14,7 @@
 
     const sidebar = document.querySelector('.feed-left-sidebar');
     if (sidebar) {
-        sidebar.style.minWidth = "374px";
+        sidebar.style.minWidth = "375px";
     }
 
     // auto follow sso
